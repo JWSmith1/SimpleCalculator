@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Calculator</title>
+    <!-- Meta tag for keywords  -->
+    <meta name="keywords" content="Calculator" >
+    <!-- Meta tag for description  -->
+    <meta name="description" content="ITIS 3135 Activity 5" >
+	<!-- Meta tag for character encoding  -->
+    <meta charset="UTF-8">
+    <!--External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="Smith-Activity7.css">
+	<!-- JavaScript function declarations -->
+    <script src="Smith-Activity7.js"></script>
+ 
+</head>
+
+<body>
+    <header>
+		<h1>My Calculator</h1>	
+		<!-- For people who don't have JavaScript enabled-->
+		<noscript>This web page requires JavaScript to be enabled on your browser.</noscript>
+	</header>
+    
+	<main id="calc">
+	
+		<!-- form for user input that represents a calculator -->
+		<form name="frmCalc" id="frmCalc">
+			<p>Please enter a numeric value or use the number buttons below.</p>
+			
+			<!-- Text Box to enter a numeric value -->
+			<input type="text" name="txtNumber" value="" size="20" /><br /><br/>
+			
+			<!-- Number buttons -->
+			<input type="button" value="1" name="btn1" id="btn1"/>
+			<input type="button" value="2" name="btn2" id="btn2"/>
+			<input type="button" value="3" name="btn3" id="btn3"/>
+			
+			<!-- ADD: Sets up operation to add current number to next number entered -->
+			<input type="button" value="+" name="btnPlus" id="btnPlus"/><br/>
+			
+			<!-- Number buttons -->
+			<input type="button" value="4" name="btn4" id="btn4"/>
+			<input type="button" value="5" name="btn5" id="btn5"/>
+			<input type="button" value="6" name="btn6" id="btn6"/>
+			
+			<!-- *** Subtract (Implement Me!) *** -->
+			<input type="button" value="-" name="btnMinus" id="btnMinus"/><br/>
+			
+			<!-- Number buttons -->
+			<input type="button" value="7" name="btn7" id="btn7"/>
+			<input type="button" value="8" name="btn8" id="btn8"/>
+			<input type="button" value="9" name="btn9" id="btn9"/>
+			
+			<!-- *** Multiply (Implement Me!) *** -->
+			<input type="button" value="*" name="btnTimes" id="btnTimes"/><br/>
+			
+			<!-- Number buttons -->
+			<input type="button" value="0" name="btn0" id="btn0"/>
+
+			<!-- *** Power (Implement Me!) Takes two values n^y *** -->
+			<input type="button" value="^" name="btnPow" id="btnPow"/>
+			
+			<!-- *** Power2 (Implement Me!) *** Takes one value n^2-->
+			<input type="button" value="^2" name="btnPow2" id="btnPow2"/>
+			
+			<!-- *** Divide (Implement Me!) *** -->
+			<input type="button" value="/" name="btnDivide" id="btnDivide"/><br/>
+			
+			<!-- Decrements value currently displayed -->
+			<input type="button" value="--" name="btnDecrement" id="btnDecrement" />
+
+			
+			<!-- *** Increment (Implement Me!) *** -->
+			<input type="button" value="++" name="btnIncrement" id="btnIncrement"/>
+			
+			<!-- *** Square Root (Implement Me!) *** -->
+			<input type="button" value="sqrt()" name="btnSqrt" id="btnSqrt"/><br />
+		   
+			<!-- Calculates the floor of the current number being displayed -->
+			<input type="button" value="Floor" name="btnFloor" id="btnFloor"/>
+		 
+			<!-- *** Round (Implement Me!) *** -->
+			<input type="button" value="Round" name="btnRound" id="btnRound"/>
+			
+			<!-- *** Decimal (Implement Me!) *** -->
+			<input type="button" value="." name="btnDecimal" id="btnDecimal"/>
+			
+			<br/><br/>
+				 
+			<input type="reset" name="btnReset" value="Clear" id="btnReset"/>
+			<input type="button" name="btnCalc" value="Calculate" id="btnCalc"/>
+		</form>
+
+	</main>
+	
+	<footer id="Validation">
+		<br/>
+		<a href="https://validator.w3.org/">Validate HTML</a>
+		<a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+
+	</footer>
+</body>
+</html>
+
+
